@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminclerksdts.summaryReport.SummaryReportController">
+   
+        <VBox spacing="10" style="-fx-background-color: #FFFF00;">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <!-- Top Row -->
+            <HBox spacing="10">
+                <!-- New Learners Today -->
+                <VBox spacing="5">
+                    <Label text="New Learners Today:" />
+                    <TableView fx:id="newLearnersTable">
+                        <TableColumn fx:id="newLearnerLearnerIdColumn" prefWidth="80.0" text="Learner ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="learnerId" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerFullNameColumn" prefWidth="150.0" text="Full Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="fullName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerDateOfBirthColumn" prefWidth="100.0" text="Date of Birth">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="dateOfBirth" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerEmailColumn" prefWidth="150.0" text="Email">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="email" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerAddressColumn" prefWidth="150.0" text="Address">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="address" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerContactNumberColumn" prefWidth="131.0" text="Contact Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="contactNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerActivePackageIdColumn" prefWidth="127.0" text="Active Package ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="activePackageId" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerIdNumberColumn" prefWidth="125.0" text="ID Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerRegistrationDateColumn" prefWidth="114.0" text="Registration Date">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="registrationDate" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerGenderColumn" prefWidth="63.0" text="Gender">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="gender" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="newLearnerStatusColumn" prefWidth="100.0" text="Status">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="status" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </TableView>
+                </VBox>
+
+                <!-- Learners Who Wrote the Test -->
+                <VBox spacing="5">
+                    <Label text="Learners Who Wrote the Test:" />
+                    <TableView fx:id="wroteTestTable">
+                        <TableColumn fx:id="wroteTestLearnerIdColumn" prefWidth="80.0" text="Learner ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="learnerId" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestFullNameColumn" prefWidth="150.0" text="Full Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="fullName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestDateOfBirthColumn" prefWidth="100.0" text="Date of Birth">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="dateOfBirth" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestEmailColumn" prefWidth="150.0" text="Email">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="email" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestAddressColumn" prefWidth="150.0" text="Address">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="address" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestContactNumberColumn" prefWidth="131.0" text="Contact Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="contactNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestActivePackageIdColumn" prefWidth="127.0" text="Active Package ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="activePackageId" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestIdNumberColumn" prefWidth="125.0" text="ID Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestRegistrationDateColumn" prefWidth="114.0" text="Registration Date">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="registrationDate" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestGenderColumn" prefWidth="63.0" text="Gender">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="gender" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="wroteTestStatusColumn" prefWidth="100.0" text="Status">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="status" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </TableView>
+                </VBox>
+            </HBox>
+
+            <!-- Bottom Row -->
+            <HBox spacing="10">
+                <!-- Learners Who Did Not Attend -->
+                <VBox spacing="5">
+                    <Label text="Learners Who Did Not Attend:" />
+                    <TableView fx:id="didNotAttendTable">
+                        <TableColumn fx:id="didNotAttendLearnerIdColumn" prefWidth="80.0" text="Learner ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="learnerId" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendFullNameColumn" prefWidth="150.0" text="Full Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="fullName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendDateOfBirthColumn" prefWidth="100.0" text="Date of Birth">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="dateOfBirth" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendEmailColumn" prefWidth="150.0" text="Email">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="email" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendAddressColumn" prefWidth="150.0" text="Address">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="address" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendContactNumberColumn" prefWidth="131.0" text="Contact Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="contactNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendActivePackageIdColumn" prefWidth="127.0" text="Active Package ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="activePackageId" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendIdNumberColumn" prefWidth="125.0" text="ID Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendRegistrationDateColumn" prefWidth="114.0" text="Registration Date">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="registrationDate" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendGenderColumn" prefWidth="63.0" text="Gender">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="gender" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="didNotAttendStatusColumn" prefWidth="100.0" text="Status">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="status" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </TableView>
+                </VBox>
+
+                <!-- Learners Scheduled for Next Day -->
+                <VBox spacing="5">
+                    <Label text="Learners Scheduled for Next Day:" />
+                    <TableView fx:id="nextDayTable">
+                        <TableColumn fx:id="nextDayLearnerIdColumn" prefWidth="80.0" text="Learner ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="learnerId" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayFullNameColumn" prefWidth="150.0" text="Full Name">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="fullName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayDateOfBirthColumn" prefWidth="100.0" text="Date of Birth">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="dateOfBirth" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayEmailColumn" prefWidth="150.0" text="Email">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="email" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayAddressColumn" prefWidth="150.0" text="Address">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="address" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayContactNumberColumn" prefWidth="131.0" text="Contact Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="contactNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayActivePackageIdColumn" prefWidth="127.0" text="Active Package ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="activePackageId" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayIdNumberColumn" prefWidth="125.0" text="ID Number">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idNumber" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayRegistrationDateColumn" prefWidth="114.0" text="Registration Date">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="registrationDate" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayGenderColumn" prefWidth="63.0" text="Gender">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="gender" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="nextDayStatusColumn" prefWidth="100.0" text="Status">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="status" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </TableView>
+                </VBox>
+            </HBox>
+        </VBox>
+</VBox>

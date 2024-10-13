@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1032.0" prefWidth="1828.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="adminclerksdts.instructor.ViewInstructorController">
+   <children>
+       
+       <ImageView fitHeight="199.0" fitWidth="1049.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/bakubungwebsitebanner.jpg" />
+         </image>
+         <effect>
+            <Reflection fraction="0.27" topOpacity="0.12" />
+         </effect>
+      </ImageView>
+        <Line endX="788.4285888671875" endY="0.361114501953125" layoutX="235.0" layoutY="196.0" startX="-230.0" startY="0.361114501953125" stroke="#00000083" strokeWidth="10.0" />
+      <Text layoutY="234.0" stroke="#862222" strokeWidth="0.8" text="Learner Licence SmartDrive Training Suite" textAlignment="CENTER" wrappingWidth="1028.4285888671875">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.7095238095238094" startX="1.0" startY="0.5">
+               <stops>
+                  <Stop color="#403f36" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="51.0" />
+         </font>
+      </Text>
+      <TableView fx:id="instructorTable" layoutX="40.0" layoutY="50.0" prefHeight="300.0" prefWidth="520.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="ID">
+               <cellValueFactory>
+                  <PropertyValueFactory property="instructorID"/>
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Full Name">
+               <cellValueFactory>
+                  <PropertyValueFactory property="fullName"/>
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100.0" text="Contact Number">
+               <cellValueFactory>
+                  <PropertyValueFactory property="contactNumber"/>
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Email">
+               <cellValueFactory>
+                  <PropertyValueFactory property="email"/>
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100.0" text="Hire Date">
+               <cellValueFactory>
+                  <PropertyValueFactory property="hireDate"/>
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="125.0" text="Specialization">
+               <cellValueFactory>
+                  <PropertyValueFactory property="specialization"/>
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Button layoutX="432.0" layoutY="697.0" onAction="#handleBackButtonAction" prefHeight="62.0" prefWidth="159.0" style="-fx-background-color: #ec0111;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Arial Unicode MS" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,112 @@
+.root {
+    -fx-background-color: #2A2A2A;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button {
+    -fx-background-color: #FFA500;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 20px;
+    -fx-padding: 8px 16px;
+}
+
+.button:hover {
+    -fx-background-color: #FFB52E;
+}
+
+.text-field {
+    -fx-background-color: #3A3A3A;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #888888;
+    -fx-background-radius: 10px;
+    -fx-padding: 8px;
+}
+
+.slider .track {
+    -fx-background-color: #3A3A3A;
+}
+
+.slider .thumb {
+    -fx-background-color: #FFA500;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: #FFA500;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #3A3A3A;
+}
+
+.toggle-button {
+    -fx-background-color: #3A3A3A;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 20px;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #FFA500;
+    -fx-text-fill: #000000;
+}
+
+.check-box .box {
+    -fx-background-color: #3A3A3A;
+    -fx-border-color: #FFA500;
+    -fx-border-radius: 3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #FFA500;
+}
+
+.radio-button .radio {
+    -fx-background-color: #3A3A3A;
+    -fx-border-color: #FFA500;
+    -fx-border-radius: 15px;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #FFA500;
+}
+
+.menu-bar {
+    -fx-background-color: #2A2A2A;
+}
+
+.menu-item {
+    -fx-background-color: #2A2A2A;
+}
+
+.menu-item:hover {
+    -fx-background-color: #FFA500;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #2A2A2A;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #3A3A3A;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #FFA500;
+}
+
+.scroll-bar {
+    -fx-background-color: #2A2A2A;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #FFA500;
+}
+
+.list-view, .table-view {
+    -fx-background-color: #2A2A2A;
+    -fx-control-inner-background: #3A3A3A;
+}
+
+.list-cell:filled:selected, .table-row-cell:filled:selected {
+    -fx-background-color: #FFA500;
+    -fx-text-fill: #000000;
+}

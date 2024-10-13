@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="768.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminclerksdts.question.ViewQuestionsController">
+   <children>
+      <HBox prefHeight="905.0" prefWidth="1381.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="874.0" prefWidth="1381.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="68.0" prefWidth="1258.0">
+                     <children>
+                        <Line endX="950.0" stroke="#00000083" strokeWidth="10.0" />
+                        <Text stroke="#862222" strokeWidth="0.8" text="View Questions" textAlignment="CENTER" wrappingWidth="953.4285888671875">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="0.7095238095238094" startX="1.0" startY="0.5">
+                                 <stops>
+                                    <Stop color="#403f36" />
+                                    <Stop color="BLACK" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="51.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" spacing="10">
+               <children>
+                  <Label text="Search" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="searchField" prefHeight="25.0" promptText="Search Questions" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#handleSearchAction" prefHeight="25.0" prefWidth="199.0" text="Search" />
+               </children>
+            </HBox>
+                  <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                          <TableView fx:id="questionsTable" prefHeight="593.0" prefWidth="940.0">
+                              <columns>
+                                  <TableColumn fx:id="questionIDColumn" minWidth="0.0" prefWidth="0.0" text="Question ID" />
+                                  <TableColumn fx:id="questionTextColumn" prefWidth="362.0" text="Question Text" />
+                                  <TableColumn fx:id="imageURLColumn" prefWidth="68.0" text="Image URL" />
+                                  <TableColumn fx:id="hasImageColumn" prefWidth="70.0" text="Has Image" />
+                                  <TableColumn fx:id="option1Column" prefWidth="281.0" text="Option 1" />
+                                  <TableColumn fx:id="option2Column" prefWidth="183.0" text="Option 2" />
+                                  <TableColumn fx:id="option3Column" prefWidth="244.0" text="Option 3" />
+                                  <TableColumn fx:id="correctOptionColumn" minWidth="0.0" prefWidth="88.0" text="Correct Option" />
+                                  <TableColumn fx:id="sourceColumn" prefWidth="84.0" text="Source" />
+                              </columns>
+                          </TableView>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="1381.0" style="-fx-spacing: 10; -fx-padding: 10;">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#LoadQuestions" prefHeight="50.0" prefWidth="189.0" text="Load Question">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#EditQuestion" prefHeight="50.0" prefWidth="189.0" text="Edit">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#DeleteQuestion" prefHeight="50.0" prefWidth="189.0" text="Delete">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="297.0" style="-fx-spacing: 1;">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" onAction="#handleBackButtonAction" prefHeight="62.0" prefWidth="159.0" style="-fx-background-color: #ec0111;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Unicode MS" size="30.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" onAction="#NewQuestion" prefHeight="50.0" prefWidth="232.0" text="New Question">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

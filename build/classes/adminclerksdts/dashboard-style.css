@@ -1,0 +1,34 @@
+.root {
+    -fx-background-color: #f3f4f6;
+}
+
+.dashboard-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.dashboard-card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 14, 0, 0, 7);
+}
+
+.card-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.card-button {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+#exitButton {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#exitButton:hover {
+    -fx-background-color: #dc2626;
+}

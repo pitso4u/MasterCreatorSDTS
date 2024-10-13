@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+
+<VBox prefHeight="589.0" prefWidth="1309.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminclerksdts.learner.NewLearnerController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="132.0" prefWidth="1381.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Line endX="1366.0" startY="0.361114501953125" stroke="#00000083" strokeWidth="10.0" />
+                <Text stroke="#862222" strokeWidth="0.8" text="New Learners" textAlignment="CENTER">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="0.7095238095238094" startX="1.0" startY="0.5">
+                            <stops>
+                                <Stop color="#403f36" />
+                                <Stop color="BLACK" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="51.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+        <HBox alignment="TOP_CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="594.0" prefWidth="1313.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <GridPane hgap="10" prefHeight="466.0" prefWidth="1313.0" vgap="10" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="36.0" />
+                                <ColumnConstraints percentWidth="9.0" />
+                                <ColumnConstraints percentWidth="35.0" />
+                                <ColumnConstraints percentWidth="8.0" />
+                                <ColumnConstraints percentWidth="41.0" />
+                        <ColumnConstraints minWidth="10.0" percentWidth="32.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="25.0" minHeight="16.0" prefHeight="22.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="46.0" minHeight="22.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="45.0" minHeight="14.0" prefHeight="28.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="58.0" minHeight="20.0" prefHeight="30.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="66.0" minHeight="16.0" prefHeight="28.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="83.0" minHeight="20.0" prefHeight="33.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="89.0" minHeight="14.0" prefHeight="31.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="101.0" minHeight="22.0" prefHeight="27.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="105.0" minHeight="15.0" prefHeight="26.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="117.0" minHeight="22.0" prefHeight="27.0" vgrow="ALWAYS" />
+                                <RowConstraints maxHeight="135.0" minHeight="19.0" prefHeight="26.0" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="135.0" minHeight="16.0" prefHeight="31.0" vgrow="ALWAYS" />
+                            </rowConstraints>
+                           <children>
+      
+                                  <!-- First Column -->
+                               <Label text="Username" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                                   <font>
+                                       <Font name="System Bold" size="20.0" />
+                                   </font>
+                               </Label>
+                               <TextField fx:id="usernameField" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      
+                                  <Label text="Password" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                               <PasswordField fx:id="passwordField" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      
+                                  <Label text="Surname, First Name" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                               <TextField fx:id="fullNameField" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+      
+                                  <Label text="Date of Birth" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                               <DatePicker fx:id="dobPicker" prefHeight="25.0" prefWidth="274.0" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+      
+                                  <Label text="Email" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                               <TextField fx:id="emailField" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+      
+                                  <!-- Second Column -->
+                               <Label text="Address" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                               <TextField fx:id="addressField" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      
+                                  <Label text="Contact Number" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                               <TextField fx:id="contactNumberField" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      
+                                  <Label text="ID Number" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                               <TextField fx:id="idNumberField" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      
+                                  <Label text="Registration Date" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                               <DatePicker fx:id="registrationDatePicker" prefHeight="25.0" prefWidth="279.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      
+                                  <Label text="Gender" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                               <ChoiceBox fx:id="genderChoiceBox" prefHeight="25.0" prefWidth="281.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+      
+                                  <!-- Third Column -->
+                               <Label text="Emergency Contact" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                               <TextField fx:id="emergencyContactField" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      
+                                  <Label text="Preferred Language" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                               <ChoiceBox fx:id="preferredLanguageChoiceBox" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      
+                                  <Label text="Previous Experience" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                               <CheckBox fx:id="previousExperienceCheckBox" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+      
+                                  <Label text="Package Type" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                               <TextField fx:id="packageTypeField" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+      
+                                  <Label text="Notes" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                               <TextArea fx:id="notesArea" GridPane.columnIndex="4" GridPane.rowIndex="9" GridPane.rowSpan="2" />
+      
+                                  <Label text="Status" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+                               <ChoiceBox fx:id="statusChoiceBox" prefHeight="25.0" prefWidth="273.0" GridPane.rowIndex="11" />
+      
+                                  <Label text="Active Package" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                               <ChoiceBox fx:id="packageChoiceBox" prefHeight="25.0" prefWidth="283.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                           </children>
+                        </GridPane>
+                        <HBox alignment="CENTER" prefHeight="77.0" prefWidth="1313.0" spacing="20">
+                            <children>
+                                <Button fx:id="saveButton" onAction="#handleSaveButtonAction" text="Save" HBox.hgrow="ALWAYS" />
+                                <Button fx:id="cancelButton" text="Cancel" />
+                                <Button fx:id="backButton" onAction="#handleBackButtonAction" style="-fx-background-color: #ec0111;" text="Back" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,75 @@
+.root {
+    -fx-background-color: #ffed4b; /* Light yellow background */
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 16px; /* General large font size */
+}
+
+.button {
+    -fx-background-color: linear-gradient(#4169E1, #27408B); /* Gradient from royal blue to a darker shade */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-border-color: #27408B; /* Dark royal blue border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 10px;
+    -fx-font-size: 22px; /* Button text size */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,139,0.5), 10, 0, 0, 1); /* Subtle dark blue shadow */
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#6495ED, #4169E1); /* Lighter royal blue hover effect */
+}
+
+.text-field {
+    -fx-background-color: #2b2b2b; /* Dark background */
+    -fx-border-color: #4169E1; /* Royal blue border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+    -fx-text-fill: #E6E6FA; /* Lavender text */
+    -fx-font-size: 18px; /* Large text field font size */
+    -fx-font-weight: bold;
+    -fx-prompt-text-fill: #A9A9A9; /* Soft gray prompt text */
+    -fx-effect: innershadow(gaussian, rgba(65,105,225,0.3), 10, 0, 0, 1); /* Subtle royal blue inner shadow */
+}
+
+.label {
+    -fx-text-fill: #E6E6FA; /* Lavender text */
+    -fx-font-weight: bold;
+    -fx-font-size: 22px; /* Large label font size */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,139,0.3), 5, 0, 0, 1); /* Soft dark blue shadow */
+}
+
+.check-box, .radio-button, .progress-bar, .slider, .table-view, .list-view, .text-area, .menu-bar, .menu-item, .scroll-bar, .tooltip, .chart-plot-background, .tree-view, .split-pane, .tab-pane, .date-picker, .spinner {
+    -fx-background-color: #2b2b2b; /* Dark background */
+    -fx-border-color: #4169E1; /* Royal blue borders */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #E6E6FA; /* Lavender text */
+    -fx-font-size: 18px; /* Large font size for these elements */
+    -fx-effect: innershadow(gaussian, rgba(65,105,225,0.3), 10, 0, 0, 1); /* Royal blue inner shadow */
+}
+
+.check-box:selected .mark, 
+.radio-button:selected .dot, 
+.progress-bar > .track, 
+.slider .thumb, 
+.menu-item:hover, 
+.tree-cell:selected, 
+.tab-pane .tab:selected, 
+.spinner .increment-arrow-button:hover, 
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #4169E1; /* Royal blue on selection/hover */
+}
+
+.split-pane-divider {
+    -fx-background-color: #4169E1; /* Royal blue dividers */
+}
+
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: #A9A9A9; /* Soft gray grid lines */
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: #27408B; /* Dark royal blue series line */
+}

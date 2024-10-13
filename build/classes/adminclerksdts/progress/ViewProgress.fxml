@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="900.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminclerksdts.progress.ViewProgressController">
+   <children>
+      <HBox prefHeight="911.0" prefWidth="1381.0">
+         <children>
+            <VBox>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="41.0" prefWidth="1381.0">
+                     <children>
+                        <Line endX="1366.0" startY="0.361114501953125" stroke="#00000083" strokeWidth="10.0" />
+                        <Text stroke="#862222" strokeWidth="0.8" text="View Learner Progress" textAlignment="CENTER" wrappingWidth="1024.4285888671875">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="0.7095238095238094" startX="1.0" startY="0.5">
+                                 <stops>
+                                    <Stop color="#403f36" />
+                                    <Stop color="BLACK" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="51.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" spacing="10">
+               <children>
+                  <Label text="Search" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="searchField" promptText="Search Progress" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#handleSearchAction"  text="Search" />
+               </children>
+            </HBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <TableView fx:id="progressTableView" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="progressIDColumn" minWidth="0.0" prefWidth="0.0" text="Progress ID" />
+                              <TableColumn fx:id="learnerFullNameColumn" text="Learner Name" />
+                              <TableColumn fx:id="instructorIDColumn" minWidth="0.0" prefWidth="0.0" text="Instructor ID" />
+                              <TableColumn fx:id="quizScoreColumn"  text="Test Score" />
+                              <TableColumn fx:id="completionStatusColumn" text="Completion Status" />
+                              <TableColumn fx:id="timestampColumn" text="Timestamp" />
+                              <TableColumn fx:id="instructorNotesColumn"  text="Instructor Notes" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="62.0" prefWidth="1168.0" style="-fx-spacing: 10;">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#LoadProgress" prefHeight="50.0" prefWidth="189.0" text="Load Progress">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#EditProgress" prefHeight="50.0" prefWidth="189.0" text="Edit">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#DeleteProgress" prefHeight="50.0" prefWidth="189.0" text="Delete">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="274.0" style="-fx-spacing: 500;">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" onAction="#handleBackButtonAction" prefHeight="62.0" prefWidth="190.0" style="-fx-background-color: #ec0111;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial Unicode MS" size="30.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

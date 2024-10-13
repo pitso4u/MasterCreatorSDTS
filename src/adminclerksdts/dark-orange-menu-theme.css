@@ -1,0 +1,109 @@
+.root {
+    -fx-background-color: #F5F7FA;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.title-text {
+    -fx-fill: #2D3748;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.subtitle-text {
+    -fx-fill: #4A5568;
+    -fx-font-size: 16px;
+}
+
+.stat-text {
+    -fx-fill: #4A5568;
+    -fx-font-size: 14px;
+}
+
+.dashboard-button {
+    -fx-background-color: white;
+    -fx-text-fill: #2D3748;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.dashboard-button:hover {
+    -fx-background-color: #EDF2F7;
+}
+
+.exit-button {
+    -fx-background-color: #FC8181;
+    -fx-text-fill: white;
+}
+
+.exit-button:hover {
+    -fx-background-color: #F56565;
+}
+
+.statistics-box {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.chart {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.chart-title {
+    -fx-text-fill: #2D3748;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.axis {
+    -fx-tick-label-fill: #4A5568;
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.default-color0.chart-bar { -fx-bar-fill: #4299E1; }
+.default-color1.chart-bar { -fx-bar-fill: #48BB78; }
+
+.chart-pie-label-line {
+    -fx-stroke: #4A5568;
+    -fx-fill: #4A5568;
+}
+
+.chart-pie-label { 
+    -fx-fill: #4A5568;
+    -fx-font-size: 14px;
+}
+
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 20px;
+}
+
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}
+
+.chart-legend-item{
+    -fx-text-fill: #4A5568;
+}
+
+.menu-bar {
+    -fx-background-color: #2C5282;
+}
+
+.menu-item {
+    -fx-background-color: #2C5282;
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #2B6CB0;
+}

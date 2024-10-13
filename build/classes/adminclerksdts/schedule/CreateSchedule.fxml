@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="TOP_CENTER" prefHeight="1042.0" prefWidth="1501.0" spacing="10" styleClass="main-container" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminclerksdts.schedule.CreateScheduleController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+    <children>
+      <VBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="1461.0">
+         <children>
+            <Line endX="1366.0" startY="0.361114501953125" stroke="#00000083" strokeWidth="10.0" />
+            <Text stroke="#862222" strokeWidth="0.8" text="View Schedules" textAlignment="CENTER" wrappingWidth="1024.4285888671875">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.7095238095238094" startX="1.0" startY="0.5">
+                     <stops>
+                        <Stop color="#403f36" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="51.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <HBox>
+         <children>
+            <VBox>
+               <children>
+                    
+                    <HBox spacing="20" styleClass="content">
+                        <children>
+                            <VBox prefHeight="577.0" prefWidth="1508.0" spacing="20" styleClass="main-content" HBox.hgrow="ALWAYS">
+                                <children>
+                                    <HBox spacing="20">
+                                        <children>
+                                            <VBox prefHeight="577.0" prefWidth="315.0">
+                                                <children>
+                                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="317.0" styleClass="section-title" text="Calendar">
+                                                        <font>
+                                                            <Font name="System Bold" size="22.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <HBox alignment="CENTER" spacing="10">
+                                                        <children>
+                                                            <Button onAction="#handlePreviousMonth" prefHeight="31.0" prefWidth="80.0" text="Previous" />
+                                                            <Label fx:id="currentMonthLabel" />
+                                                            <Button onAction="#handleNextMonth" prefHeight="31.0" prefWidth="80.0" text="Next" />
+                                                        </children>
+                                                    </HBox>
+                                                    <GridPane fx:id="calendarGrid" hgap="5" vgap="5" />
+                                                    <Button onAction="#handleCreateScheduleButtonAction" styleClass="create-button" text="+ Create Schedule" />
+                                                </children>
+                                            </VBox>
+                                            <VBox prefWidth="600" spacing="10">
+                                                <children>
+                                                    <Label alignment="CENTER" contentDisplay="CENTER" styleClass="section-title" text="Class Schedules">
+                                                        <font>
+                                                            <Font name="System Bold" size="22.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <HBox spacing="10">
+                                                        <children>
+                                                            <VBox prefWidth="290">
+                                                                <children>
+                                                                    <Label text="Morning 8:00 - 10:00" />
+                                                                    <Label fx:id="morningSlot1Available" />
+                                                                    <Label fx:id="morningSlot1Total" />
+                                                                    <ListView fx:id="morningList1" prefHeight="150" />
+                                                                </children>
+                                                            </VBox>
+                                                            <VBox prefWidth="290">
+                                                                <children>
+                                                                    <Label text="Morning 10:00 - 12:00" />
+                                                                    <Label fx:id="morningSlot2Available" />
+                                                                    <Label fx:id="morningSlot2Total" />
+                                                                    <ListView fx:id="morningList2" prefHeight="150" />
+                                                                </children>
+                                                            </VBox>
+                                                        </children>
+                                                    </HBox>
+                                                    <HBox spacing="10">
+                                                        <children>
+                                                            <VBox prefWidth="290">
+                                                                <children>
+                                                                    <Label text="Afternoon 14:00 - 16:00" />
+                                                                    <Label fx:id="afternoonSlot1Available" />
+                                                                    <Label fx:id="afternoonSlot1Total" />
+                                                                    <ListView fx:id="afternoonList1" prefHeight="150" />
+                                                                </children>
+                                                            </VBox>
+                                                            <VBox prefWidth="290">
+                                                                <children>
+                                                                    <Label text="Afternoon 16:00 - 18:00" />
+                                                                    <Label fx:id="afternoonSlot2Available" />
+                                                                    <Label fx:id="afternoonSlot2Total" />
+                                                                    <ListView fx:id="afternoonList2" prefHeight="150" />
+                                                                </children>
+                                                            </VBox>
+                                                        </children>
+                                                    </HBox>
+                                                </children>
+                                            </VBox>
+                                            <VBox prefHeight="577.0" prefWidth="466.0" styleClass="class-list">
+                                                <children>
+                                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="339.0" text="All Learners for the Day" textAlignment="CENTER">
+                                                        <font>
+                                                            <Font name="System Bold" size="22.0" />
+                                                        </font>
+                                                    </Label>
+                                                    <ListView fx:id="classList" prefHeight="545.0" prefWidth="364.0" VBox.vgrow="ALWAYS" />
+                                                </children>
+                                            </VBox>
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" spacing="20">
+                        <children>
+                            <Button onAction="#handleBackButtonAction" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #ec0111;" text="Back" textFill="WHITE">
+                                <font>
+                                    <Font name="System Bold" size="18.0" />
+                                </font>
+                            </Button>
+                        </children>
+                    </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</VBox>

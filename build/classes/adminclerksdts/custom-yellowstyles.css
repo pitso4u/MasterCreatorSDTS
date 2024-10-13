@@ -1,0 +1,119 @@
+.root {
+    -fx-background-color: #ffed4b; /* Bright yellow background */
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 16px; /* General font size */
+    -fx-text-fill: #333333; /* Dark gray text for readability */
+}
+
+.button {
+    -fx-background-color: #ffc107; /* Warm yellow button */
+    -fx-text-fill: #333333; /* Dark gray text for contrast */
+    -fx-border-color: #ff9800; /* Orange border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-size: 20px; /* Button text size */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(255,152,0,0.5), 10, 0, 0, 1); /* Subtle orange shadow */
+}
+
+.button:hover {
+    -fx-background-color: #ffb300; /* Slightly darker yellow on hover */
+    -fx-text-fill: #000000; /* Black text on hover for higher contrast */
+}
+
+.text-field {
+    -fx-background-color: #fff9c4; /* Light yellow background */
+    -fx-border-color: #ff9800; /* Orange border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #333333; /* Dark gray text */
+    -fx-font-size: 18px; /* Large text field font size */
+    -fx-font-weight: bold;
+    -fx-prompt-text-fill: #757575; /* Medium gray prompt text */
+    -fx-effect: innershadow(gaussian, rgba(255,193,7,0.3), 10, 0, 0, 1); /* Subtle yellow inner shadow */
+}
+
+.label {
+    -fx-text-fill: #333333; /* Dark gray text */
+    -fx-font-weight: bold;
+    -fx-font-size: 22px; /* Large label font size */
+    -fx-effect: dropshadow(gaussian, rgba(255,193,7,0.5), 5, 0, 0, 1); /* Soft yellow shadow */
+}
+
+.check-box, .radio-button, .progress-bar, .slider, .table-view, .list-view, .text-area, .menu-bar, .menu-item, .scroll-bar, .tooltip, .chart-plot-background, .tree-view, .split-pane, .tab-pane, .date-picker, .spinner {
+    -fx-background-color: #fff9c4; /* Light yellow background */
+    -fx-border-color: #ff9800; /* Orange borders */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #333333; /* Dark gray text */
+    -fx-font-size: 18px; /* Large font size for these elements */
+    -fx-effect: innershadow(gaussian, rgba(255,193,7,0.3), 10, 0, 0, 1); /* Yellow inner shadow */
+}
+
+.check-box:selected .mark, 
+.radio-button:selected .dot, 
+.progress-bar > .track, 
+.slider .thumb, 
+.menu-item:hover, 
+.tree-cell:selected, 
+.tab-pane .tab:selected, 
+.spinner .increment-arrow-button:hover, 
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #ffc107; /* Warm yellow on selection/hover */
+}
+.menu-item {
+    -fx-background-color: #fff9c4; /* Default light yellow */
+    -fx-text-fill: #333333;
+    -fx-border-color: #ff9800;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-size: 18px;
+}
+.menu-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-width: 0;
+}
+
+.menu-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.menu-bar {
+    -fx-background-color: #ffed4b;
+}
+
+
+
+.menu-item:hover {
+    -fx-background-color: #ffc107;
+}
+
+/* Make sure content is scrollable */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.button:focused {
+    -fx-border-color: #ff9800;
+    -fx-background-color: #ffb300;
+}
+
+.split-pane-divider {
+    -fx-background-color: #ff9800; /* Orange dividers */
+}
+
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: #bdbdbd; /* Light gray grid lines */
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: #ff9800; /* Orange series line */
+}

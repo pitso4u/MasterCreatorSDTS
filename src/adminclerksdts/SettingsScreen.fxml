@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="adminclerksdts.SettingsController" alignment="CENTER" spacing="20.0">
+    <children>
+        <Label text="Settings" style="-fx-font-size: 20px;" />
+        
+        <!-- Theme Selection -->
+        <HBox spacing="10">
+            <Label text="Theme:" />
+            <ChoiceBox fx:id="themeChoiceBox" prefWidth="150.0" />
+        </HBox>
+
+        <!-- Database Configuration -->
+        <HBox spacing="10">
+            <Label text="Database Host:" />
+            <TextField fx:id="dbHostField" prefWidth="200.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Database Port:" />
+            <TextField fx:id="dbPortField" prefWidth="100.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Database Name:" />
+            <TextField fx:id="dbNameField" prefWidth="200.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Username:" />
+            <TextField fx:id="dbUserField" prefWidth="200.0" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Password:" />
+            <PasswordField fx:id="dbPasswordField" prefWidth="200.0" />
+        </HBox>
+
+        <!-- Buttons -->
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Save" onAction="#handleSaveButtonAction" />
+            <Button text="Cancel" onAction="#handleCancelButtonAction" />
+        </HBox>
+
+        <!-- Status Label -->
+        <Label fx:id="statusLabel" style="-fx-text-fill: red;" />
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</VBox>

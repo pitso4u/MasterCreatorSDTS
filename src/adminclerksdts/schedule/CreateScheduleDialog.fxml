@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="721.0" prefWidth="1372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminclerksdts.schedule.CreateScheduleDialogController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="1381.0">
+            <children>
+                <Line endX="1366.0" startY="0.361114501953125" stroke="#00000083" strokeWidth="10.0" />
+                <Text stroke="#862222" strokeWidth="0.8" text="New Schedule" textAlignment="CENTER" wrappingWidth="1024.4285888671875">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="0.7095238095238094" startX="1.0" startY="0.5">
+                            <stops>
+                                <Stop color="#403f36" />
+                                <Stop color="BLACK" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="51.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+      <VBox prefHeight="380.0" prefWidth="1350.0">
+         <children>
+              <Label styleClass="dialog-title" text="Create New Schedule">
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Label>
+              
+              <HBox prefHeight="80.0" prefWidth="684.0">
+                  <children>
+                      <Label text="Date:" />
+                      <DatePicker fx:id="datePicker" prefHeight="44.0" prefWidth="284.0" />
+                  </children>
+              </HBox>
+              
+              <HBox prefHeight="81.0" prefWidth="684.0">
+                  <children>
+                      <Label text="Time Slot:" />
+                      <ComboBox fx:id="timeSlotComboBox" prefHeight="45.0" prefWidth="256.0" />
+                  </children>
+              </HBox>
+              
+              <HBox prefHeight="80.0" prefWidth="684.0">
+                  <children>
+                      <Label text="Learner:" />
+                      <ComboBox fx:id="learnerComboBox" prefHeight="48.0" prefWidth="272.0" />
+                      <Label fx:id="remainingClassesLabel" text="Remaining Classes:" />
+      
+                  </children>
+              </HBox>
+              
+              <HBox spacing="10">
+                  <children>
+                      <Button onAction="#handleCancel" prefHeight="31.0" prefWidth="132.0" text="Cancel" />
+                      <Button onAction="#handleCreate" prefHeight="31.0" prefWidth="130.0" text="Create" />
+                  </children>
+              </HBox>
+              <HBox alignment="CENTER" prefHeight="62.0" prefWidth="329.0" style="-fx-spacing: 500;">
+                  <children>            
+                      <Button alignment="CENTER" contentDisplay="CENTER" onAction="#handleBackButtonAction" prefHeight="62.0" prefWidth="159.0" style="-fx-background-color: #ec0111;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                          <font>
+                              <Font name="Arial Unicode MS" size="30.0" />
+                          </font>
+                      </Button>
+                  </children>
+              </HBox>
+              <HBox>
+                  <children>
+                      <Label fx:id="errorLabel" />
+                  </children>
+              </HBox>
+         </children>
+      </VBox>
+    </children>
+</VBox>
